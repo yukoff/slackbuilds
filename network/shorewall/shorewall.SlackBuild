@@ -41,9 +41,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$BASEVERS
-tar xvf $CWD/$PRGNAM-$BASEVERS.tar.bz2
-cd $TMP/$PRGNAM-$BASEVERS
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.bz2
+cd $TMP/$PRGNAM-$VERSION
 chown -R root:root .
 
 # Patch the base against all the patchlevel patches in order if present
@@ -91,6 +91,6 @@ cd $PKG
 
 # Clean up the extra stuff:
 if [ "$1" = "--cleanup" ]; then
-  rm -rf $TMP/$PRGNAM-$BASEVERS
+  rm -rf $TMP/$PRGNAM-$VERSION
   rm -rf $PKG
 fi
