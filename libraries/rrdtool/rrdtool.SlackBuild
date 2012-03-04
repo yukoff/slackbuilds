@@ -91,6 +91,9 @@ find -L . \
 # Correct hard-coded path to lua libs (thanks to pprkut for spotting this one!)
 sed "s|/lib/lua|/lib${LIBDIRSUFFIX}/lua|g" -i configure
 
+SLKCFLAGS="$SLKCFLAGS -I /usr/include/cairo -I /usr/include/pango-1.0 -I /usr/include/glib-2.0 -I /usr/lib/glib-2.0/include"
+
+#LIBS=-lm \
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 RRDDOCDIR=/usr/doc/$PRGNAM-$VERSION \
