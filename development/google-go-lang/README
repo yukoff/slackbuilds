@@ -45,6 +45,14 @@ privilege to clone source.
 As of go1.2, the 'go doc ...' command has been relocated to the go.tools
 library (golang-googlecode-gotools), which provide `godoc`.
 
+As of go1.5, shared libraries are now supported. The flags to use linking are
+available for `go get`, `go install` and `go build`.
+To learn more see `go help buildmode`.
+
+As of go1.5, the Go tool chain is written in Go. To build Go on a machine
+without Go compiler available and GCC < 5 go1.4 bootstrap tool chain will be 
+built beforehand (Go 1.4 was the last distribution in which the tool chain
+was written in C.)
 
 To elect to run the buildtime tests of this package, provide the environment
 variable RUN_TEST=true at build time.
