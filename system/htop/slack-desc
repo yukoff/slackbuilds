@@ -1,0 +1,22 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+    |-----handy-ruler------------------------------------------------------|
+htop: htop - an interactive process viewer for Unix
+htop:
+htop: This is `htop`, an interactive process viewer.
+htop: It requires `ncurses`. It is developed primarily on Linux,
+htop: but we also have code for running under FreeBSD and Mac OS X
+htop: (help and testing are wanted for these platforms!)
+htop:
+htop: This software has evolved considerably over the years,
+htop: and is reasonably complete, but there is always room for improvement.
+htop:
+htop:
+htop:
+htop:
+htop:
